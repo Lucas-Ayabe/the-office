@@ -7,8 +7,14 @@
     <title>The Office</title>
     <link rel="stylesheet" href="./assets/css/mix.css">
     <style>
-        html, body {
+        html,
+        body {
             scroll-behavior: smooth;
+        }
+
+        .header__logo a {
+            text-decoration: none;
+            color: #000;
         }
     </style>
 </head>
@@ -16,7 +22,7 @@
 <body>
     <header class="header">
         <div class="header__container container">
-            <h1 class="header__logo">The Office</h1>
+            <h1 class="header__logo"><a href="index.html">The Office</a></h1>
             <button data-target=".nav" class="header__burger burger">
                 <span class="burger__bar"></span>
                 <span class="burger__bar"></span>
@@ -37,7 +43,7 @@
                 <div class="container banner__content">
                     <h1 class="banner__title">Find the space<br> that spurs your<br> creativity</h1>
                     <p class="banner__text">Browse combinations of storage, lightning,<br> chairs, desks and more</p>
-                    <a href="" class="button -dark">VIEW OFFICES</a>    
+                    <a href="" class="button -dark">VIEW OFFICES</a>
                     <!-- <img class="banner__image" src="./assets/images/banner.jpg" alt=""> -->
                 </div>
                 <img class="banner__image banner__image--halfvw" src="./assets/images/banner.jpg" alt="">
@@ -49,7 +55,9 @@
                         <div class="column column--md-7">
                             <div class="container">
                                 <h2 class="title">Home office</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quia illo nostrum maxime enim suscipit officia repudiandae sunt cum eos vero corrupti, possimus exercitationem, facere reprehenderit aliquid impedit at eius.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quia illo nostrum
+                                    maxime enim suscipit officia repudiandae sunt cum eos vero corrupti, possimus
+                                    exercitationem, facere reprehenderit aliquid impedit at eius.</p>
                                 <a href="" class="button -light">READ MORE</a>
                             </div>
                         </div>
@@ -65,7 +73,9 @@
                         <div class="column column--md-7">
                             <div class="container">
                                 <h2 class="title">Gallery</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quia illo nostrum maxime enim suscipit officia repudiandae sunt cum eos vero corrupti, possimus exercitationem, facere reprehenderit aliquid impedit at eius.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quia illo nostrum
+                                    maxime enim suscipit officia repudiandae sunt cum eos vero corrupti, possimus
+                                    exercitationem, facere reprehenderit aliquid impedit at eius.</p>
                                 <a href="" class="button -dark">SHOW MORE</a>
                             </div>
                         </div>
@@ -79,7 +89,9 @@
                         <div class="column column--md-7">
                             <div class="container">
                                 <h2 class="title">About</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quia illo nostrum maxime enim suscipit officia repudiandae sunt cum eos vero corrupti, possimus exercitationem, facere reprehenderit aliquid impedit at eius.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quia illo nostrum
+                                    maxime enim suscipit officia repudiandae sunt cum eos vero corrupti, possimus
+                                    exercitationem, facere reprehenderit aliquid impedit at eius.</p>
                                 <a href="" class="button -dark">READ MORE</a>
                             </div>
                         </div>
@@ -92,7 +104,9 @@
             <section id="subscribe" class="section section--larger -light u-text-center">
                 <div class="container">
                     <h2 class="title">Subscribe</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, mollitia veniam nihil voluptas facilis sapiente molestiae minus nulla doloremque laborum atque temporibus consequatur voluptatum excepturi.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, mollitia veniam nihil
+                        voluptas facilis sapiente molestiae minus nulla doloremque laborum atque temporibus consequatur
+                        voluptatum excepturi.</p>
                     <br><br>
                     <form class="form -dark">
                         <div class="field">
@@ -139,8 +153,16 @@
             this.classList.toggle('is-active');
             target.classList.toggle('is-active');
         }
-        
+
         burger.addEventListener('click', toggleMenu);
+
+        const links = document.querySelectorAll('.nav__link');
+
+        links.forEach(link => {
+            link.addEventListener('click', function (event) {
+                toggleMenu.call(burger);
+            });
+        });
     </script>
 </body>
 
