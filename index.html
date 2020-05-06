@@ -1,159 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Office</title>
+        <meta name="theme-color" content="#000" />
+        <link rel="stylesheet" href="./assets/css/mix.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Office</title>
-    <meta name="theme-color" content="#000" />
-    <link rel="stylesheet" href="./assets/css/mix.css">
-</head>
-
-<body>
-    <header class="header">
-        <div class="header__container container">
-            <h1 class="header__logo"><a href="index.html">The Office</a></h1>
-            <button data-target=".nav" class="header__burger burger">
-                <span class="burger__bar"></span>
-                <span class="burger__bar"></span>
-            </button>
-            <nav class="header__nav nav -left">
-                <ul class="nav__menu">
-                    <li class="nav__item"><a href="#home-office" class="nav__link">Home Office</a></li>
-                    <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#subscribe" class="nav__link">Subscribe</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <article>
-            <header class="banner banner--hero banner--horizontal">
-                <div class="container banner__content">
-                    <h1 class="banner__title">Find the space<br> that spurs your<br> creativity</h1>
-                    <p class="banner__text">Browse combinations of storage, lightning,<br> chairs, desks and more</p>
-                    <a href="" class="button -dark">VIEW OFFICES</a>
-                    <!-- <img class="banner__image" src="./assets/images/banner.jpg" alt=""> -->
-                </div>
-                <img class="banner__image banner__image--halfvw" src="./assets/images/banner.jpg" alt="">
-            </header>
-
-            <section id="home-office" class="section section--larger -dark">
-                <div class="container">
-                    <div class="columns">
-                        <div class="column column--md-7">
-                            <div class="container">
-                                <h2 class="title">Home office</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quia illo nostrum
-                                    maxime enim suscipit officia repudiandae sunt cum eos vero corrupti, possimus
-                                    exercitationem, facere reprehenderit aliquid impedit at eius.</p>
-                                <a href="" class="button -light">READ MORE</a>
-                            </div>
-                        </div>
-                        <div class="column column--md-5"></div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="gallery" class="section section--larger -half-light">
-                <div class="container">
-                    <div class="columns">
-                        <div class="column column--md-5"></div>
-                        <div class="column column--md-7">
-                            <div class="container">
-                                <h2 class="title">Gallery</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quia illo nostrum
-                                    maxime enim suscipit officia repudiandae sunt cum eos vero corrupti, possimus
-                                    exercitationem, facere reprehenderit aliquid impedit at eius.</p>
-                                <a href="" class="button -dark">SHOW MORE</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="u-bg-dark" style="padding-top: 120px;"></div>
-            <section id="about" class="section section--larger -half-dark">
-                <div class="container">
-                    <div class="columns">
-                        <div class="column column--md-7">
-                            <div class="container">
-                                <h2 class="title">About</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quia illo nostrum
-                                    maxime enim suscipit officia repudiandae sunt cum eos vero corrupti, possimus
-                                    exercitationem, facere reprehenderit aliquid impedit at eius.</p>
-                                <a href="" class="button -dark">READ MORE</a>
-                            </div>
-                        </div>
-                        <div class="column column--md-5"></div>
-                    </div>
-                </div>
-            </section>
-            <div class="u-bg-dark" style="padding-top: 120px;"></div>
-
-            <section id="subscribe" class="section section--larger -light u-text-center">
-                <div class="container">
-                    <h2 class="title">Subscribe</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, mollitia veniam nihil
-                        voluptas facilis sapiente molestiae minus nulla doloremque laborum atque temporibus consequatur
-                        voluptatum excepturi.</p>
-                    <br><br>
-                    <form class="form -dark">
-                        <div class="field">
-                            <label class="field__label" for="name">Nome</label>
-                            <input type="text" name="name" id="name" class="field__input">
-                        </div>
-
-                        <div class="field">
-                            <label class="field__label" for="email">E-mail</label>
-                            <input type="email" name="email" id="email" class="field__input">
-                        </div>
-
-                        <button class="button -light">SUBSCRIBE NOW</button>
-                    </form>
-                </div>
-            </section>
-        </article>
-
-        <footer class="section section--small -dark u-text-center">
-            <div class="container">
-                <p>Site de estudo crido por Lucas Akira Ayabe.</p>
-                <p>Design baseado no criado por <a href="https://www.instagram.com/ui_gradient/">@ui_gradient</a>.</p>
-                <p>Foto no banner inicial por Georgia de Lotz on Unsplash</p>
+    <body>
+        <header class="header">
+            <div class="header__container container">
+                <h1 class="header__logo">
+                    <a href="index.html">The Office</a>
+                </h1>
+                <button data-target=".nav" class="header__burger burger">
+                    <span class="burger__bar"></span>
+                    <span class="burger__bar"></span>
+                </button>
+                <nav class="header__nav nav -left">
+                    <ul class="nav__menu">
+                        <li class="nav__item">
+                            <a href="#home-office" class="nav__link"
+                                >Home Office</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a href="#gallery" class="nav__link">Gallery</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#subscribe" class="nav__link">Subscribe</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </footer>
-    </main>
+        </header>
+        <main>
+            <article>
+                <header class="banner banner--hero banner--horizontal">
+                    <div class="container banner__content">
+                        <h1 class="banner__title">
+                            Find the space<br />
+                            that spurs your<br />
+                            creativity
+                        </h1>
+                        <p class="banner__text">
+                            Browse combinations of storage, lightning,<br />
+                            chairs, desks and more
+                        </p>
+                        <a href="" class="button -dark">VIEW OFFICES</a>
+                        <!-- <img class="banner__image" src="./assets/images/banner.jpg" alt=""> -->
+                    </div>
+                    <img
+                        class="banner__image banner__image--halfvw"
+                        src="./assets/images/banner.jpg"
+                        alt=""
+                    />
+                </header>
 
-    <script>
-        const header = document.querySelector(".header");
-        window.addEventListener('scroll', e => {
-            const y = window.scrollY;
+                <section id="home-office" class="section section--larger -dark">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column column--md-7">
+                                <div class="container">
+                                    <h2 class="title">Home office</h2>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Voluptate quia illo
+                                        nostrum maxime enim suscipit officia
+                                        repudiandae sunt cum eos vero corrupti,
+                                        possimus exercitationem, facere
+                                        reprehenderit aliquid impedit at eius.
+                                    </p>
+                                    <a href="" class="button -light"
+                                        >READ MORE</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="column column--md-5"></div>
+                        </div>
+                    </div>
+                </section>
 
-            if (y > 10) {
-                header.classList.add('is-active');
-            } else {
-                header.classList.remove('is-active');
-            }
-        });
+                <section
+                    id="gallery"
+                    class="section section--larger -half-light"
+                >
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column column--md-5"></div>
+                            <div class="column column--md-7">
+                                <div class="container">
+                                    <h2 class="title">Gallery</h2>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Voluptate quia illo
+                                        nostrum maxime enim suscipit officia
+                                        repudiandae sunt cum eos vero corrupti,
+                                        possimus exercitationem, facere
+                                        reprehenderit aliquid impedit at eius.
+                                    </p>
+                                    <a href="" class="button -dark"
+                                        >SHOW MORE</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="u-bg-dark" style="padding-top: 120px;"></div>
+                <section id="about" class="section section--larger -half-dark">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column column--md-7">
+                                <div class="container">
+                                    <h2 class="title">About</h2>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Voluptate quia illo
+                                        nostrum maxime enim suscipit officia
+                                        repudiandae sunt cum eos vero corrupti,
+                                        possimus exercitationem, facere
+                                        reprehenderit aliquid impedit at eius.
+                                    </p>
+                                    <a href="" class="button -dark"
+                                        >READ MORE</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="column column--md-5"></div>
+                        </div>
+                    </div>
+                </section>
+                <div class="u-bg-dark" style="padding-top: 120px;"></div>
 
-        const burger = document.querySelector('.burger');
+                <section
+                    id="subscribe"
+                    class="section section--larger -light u-text-center"
+                >
+                    <div class="container">
+                        <h2 class="title">Subscribe</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Quisquam, mollitia veniam nihil voluptas
+                            facilis sapiente molestiae minus nulla doloremque
+                            laborum atque temporibus consequatur voluptatum
+                            excepturi.
+                        </p>
+                        <br /><br />
+                        <form
+                            data-netlify
+                            name="subscribe-form"
+                            class="form -dark"
+                        >
+                            <div class="field">
+                                <label class="field__label" for="name"
+                                    >Nome</label
+                                >
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    class="field__input"
+                                />
+                            </div>
 
-        function toggleMenu(event) {
-            const target = document.querySelector(this.dataset.target);
-            this.classList.toggle('is-active');
-            target.classList.toggle('is-active');
-        }
+                            <div class="field">
+                                <label class="field__label" for="email"
+                                    >E-mail</label
+                                >
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    class="field__input"
+                                />
+                            </div>
 
-        burger.addEventListener('click', toggleMenu);
+                            <button class="button -light">SUBSCRIBE NOW</button>
+                        </form>
+                    </div>
+                </section>
+            </article>
 
-        const links = document.querySelectorAll('.nav__link');
+            <footer class="section section--small -dark u-text-center">
+                <div class="container">
+                    <p>Site de estudo crido por Lucas Akira Ayabe.</p>
+                    <p>
+                        Design baseado no criado por
+                        <a href="https://www.instagram.com/ui_gradient/"
+                            >@ui_gradient</a
+                        >.
+                    </p>
+                    <p>
+                        Foto no banner inicial por Georgia de Lotz on Unsplash
+                    </p>
+                </div>
+            </footer>
+        </main>
 
-        links.forEach(link => {
-            link.addEventListener('click', function (event) {
-                toggleMenu.call(burger);
+        <script>
+            const header = document.querySelector(".header");
+            window.addEventListener("scroll", (e) => {
+                const y = window.scrollY;
+
+                if (y > 10) {
+                    header.classList.add("is-active");
+                } else {
+                    header.classList.remove("is-active");
+                }
             });
-        });
-    </script>
-</body>
 
+            const burger = document.querySelector(".burger");
+
+            function toggleMenu(event) {
+                const target = document.querySelector(this.dataset.target);
+                this.classList.toggle("is-active");
+                target.classList.toggle("is-active");
+            }
+
+            burger.addEventListener("click", toggleMenu);
+
+            const links = document.querySelectorAll(".nav__link");
+
+            links.forEach((link) => {
+                link.addEventListener("click", function(event) {
+                    toggleMenu.call(burger);
+                });
+            });
+        </script>
+    </body>
 </html>
